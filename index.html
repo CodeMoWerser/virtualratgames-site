@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Virtual RAT Games</title>
+<meta name="description" content="Virtual RAT Games, an independent studio making Strongpoint, a turn-based small unit tactics game.">
+<meta property="og:title" content="Virtual RAT Games">
+<meta property="og:description" content="Independent studio making Strongpoint, a turn-based small unit tactics game.">
+<meta property="og:image" content="https://virtualratgames.com/img/og.png">
+<meta property="og:url" content="https://virtualratgames.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0e10;
+    --panel: #12181b;
+    --text: #e6ebee;
+    --muted: #8d989e;
+    --rat: #c08a5a;
+    --accent: #f0ad3c;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font: 400 1.15rem/1.55 "Barlow Semi Condensed", system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main { flex: 1; width: 100%; max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--rat); }
+  a:hover { color: var(--accent); }
+
+  .studio { text-align: center; padding: 48px 0 24px; }
+  .studio img { width: min(360px, 80vw); height: auto; display: block; margin: 0 auto; }
+  .studio p { color: var(--muted); margin: 16px 0 0; letter-spacing: .04em; }
+
+  .game {
+    background: var(--panel);
+    border: 1px solid #1e272b;
+    border-left: 4px solid var(--accent);
+    padding: 32px 28px;
+    margin: 32px 0;
+  }
+  .game img { width: 100%; max-width: 640px; height: auto; display: block; margin: -24px 0 -12px -20px; }
+  .game h2 { position: absolute; left: -9999px; }
+  .game p { margin: 12px 0 0; max-width: 60ch; }
+  .tag {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 4px 12px;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+    font-size: .9rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+  .contact { text-align: center; padding: 8px 0 48px; }
+  .contact h2 { font-weight: 600; font-size: 1rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 20px 16px 28px; border-top: 1px solid #1a2225; }
+
+  @media (max-width: 520px) {
+    .game { padding: 24px 18px; }
+    .game img { margin: -16px 0 -8px -12px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header class="studio">
+    <img src="img/studio_logo.png" alt="Virtual RAT Games" width="640" height="640">
+    <p>An independent game studio.</p>
+  </header>
+
+  <section class="game">
+    <h2>Strongpoint</h2>
+    <img src="img/strongpoint_title.png" alt="Strongpoint: Small Unit Tactics" width="1200" height="360">
+    <p>A turn-based tactics game about leading a modern infantry squad. Cover, sight, smoke and suppression work the way you'd expect them to.</p>
+    <span class="tag">In development</span>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <a href="mailto:contact@virtualratgames.com">contact@virtualratgames.com</a>
+  </section>
+</main>
+<footer>&copy; 2026 Virtual RAT Games</footer>
+</body>
+</html>
