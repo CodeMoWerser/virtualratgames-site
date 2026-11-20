@@ -49,7 +49,7 @@
     padding: 32px 28px;
     margin: 32px 0;
   }
-  .game img { width: 100%; max-width: 640px; height: auto; display: block; margin: -24px 0 -12px -20px; }
+  .game img { width: calc(100% + 56px); height: auto; display: block; margin: -32px -28px 24px; }
   .game h2 { position: absolute; left: -9999px; }
   .game p { margin: 12px 0 0; max-width: 60ch; }
   .tag {
@@ -71,7 +71,7 @@
 
   @media (max-width: 520px) {
     .game { padding: 24px 18px; }
-    .game img { margin: -16px 0 -8px -12px; }
+    .game img { width: calc(100% + 36px); margin: -24px -18px 18px; }
   }
 </style>
 </head>
@@ -84,7 +84,7 @@
 
   <section class="game">
     <h2>Strongpoint</h2>
-    <img src="img/strongpoint_title.png" alt="Strongpoint: Small Unit Tactics" width="1200" height="360">
+    <img src="img/strongpoint_header.png" alt="Strongpoint" width="920" height="430">
     <p>A turn-based tactics game about leading a modern infantry fireteam through deadly missions. Always outnumbered and outgunned, you'll have to use cover, flanking, suppression, and tactics to win.</p>
     <span class="tag">In development</span>
   </section>
